@@ -152,7 +152,7 @@ int main()
 		{goto game;}
 game:
      challenge_point=0;
-     for(index2=1; index2<=10; index2++)
+     for(index2=1; index2<=20; index2++)
      {system("cls");
      num2= index2;
 
@@ -267,7 +267,8 @@ game:
 		if (toupper(getch())=='A')
 			{printf("\n\nCorrect!!!");challenge_point++;getch(); break;}
 		else
-		       {printf("\n\nWrong!!! The correct answer is A.Nile");getch();break;goto score;}
+		       {printf("\n\nWrong!!! The correct answer is A.Nile");getch();goto score;
+		       break;}
 
         case 11:
 		printf("\n\n\nWhat is the color of the Black Box in aeroplanes?");
@@ -277,7 +278,8 @@ game:
 			 break;}
 		else
               {printf("\n\nWrong!!! The correct answer is C.Orange");getch();
-              break;goto score;}
+              goto score;
+		       break;}
 
         case 12:
 		printf("\n\n\nWhich city is known at 'The City of Seven Hills'?");
@@ -287,7 +289,8 @@ game:
 			   break;}
 		else
               {printf("\n\nWrong!!! The correct answer is A.Rome");getch();
-              break;goto score;}
+              goto score;
+		       break;}
 
 		case 13:
 		printf("\n\n\nName the country where there no mosquitoes are found?");
@@ -297,7 +300,8 @@ game:
 			break;}
 		else
 		       {printf("\n\nWrong!!! The correct answer is D.France");getch();
-		       break;goto score;}
+		       goto score;
+		       break;}
 
         case 14:
 		printf("\n\n\nWho is the author of 'Pulpasa Cafe'?");
@@ -307,7 +311,8 @@ game:
 			 break;}
 		else
 		       {printf("\n\nWrong!!! The correct answer is A.Narayan Wagle");getch();
-		       break;goto score;}
+		       goto score;
+		       break;}
 
 		case 15:
 		printf("\n\n\nWhich Blood Group is known as the Universal Recipient?");
@@ -445,7 +450,7 @@ void help()
     printf("\n >> No negative marking for wrong answers");
 
 	printf("\n\n\t*********************BEST OF LUCK*********************************");
-	printf("\n\n\t*****C PROGRAM QUIZ GAME is developed by CODE WITH C TEAM********");}
+	}
 
 void edit_score(float score, char plnm[20])
 	{system("cls");
